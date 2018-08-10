@@ -1,0 +1,125 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    background: url(../Images/subtle_carbon.png);
+    height: 100%;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background: linear-gradient(red, yellow);
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.video-container {
+    width: 640px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -64px;
+    text-align: center;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+    color: #444;
+    font-size: 12px;
+}
+
+.result {
+    width: auto;
+    padding: 20px 0px 0px 0px;
+}
+
+.file {
+    width: 100%;
+    padding: 20px;
+    color: #FFF;
+    height: 30px;
+    border: solid 1px #ccc;
+    font-size: 15px;
+}
+
+.file-return {
+    color: rgba(255,255,255,1);
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+.input-file-trigger {
+    background: url(../Images/upload.png) no-repeat left center Transparent;
+    background-position-x: 8px;
+    border: solid 3px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+    color: rgba(255,255,255,0.5);
+    padding: 20px 40px 20px 80px;
+    border-radius: 31px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+    .input-file-trigger:hover {
+        background: url(../Images/upload-hover.png) no-repeat left center rgba(17,196,255,0.25);
+        background-position-x: 8px;
+        border-color: #FFF;
+        color: rgba(255,255,255,1);
+        transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+    }
+
+
+input[type=file] {
+    display: none;
+}
+
+button.converter {
+    width: auto;
+    border-radius: 31px;
+    border: none;
+    position: fixed;
+    font-size: 16px;
+    bottom: 20px;
+    margin-left: -85px;
+    padding: 20px 40px 20px 80px;
+    background: url(../Images/convert.png) no-repeat left center #00B200;
+    background-position-x: 40px;
+    font-weight: 700;
+    color: rgba(255,255,255,1);
+    box-shadow: 2px 8px 24px rgba(0,178,0,0.25);
+    outline: none;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+    text-transform: lowercase;
+}
+
+.converter:hover {
+    background: url(../Images/convert.png) no-repeat left center #00C800;
+    background-position-x: 40px;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
