@@ -60,22 +60,21 @@ namespace VideoConverter
                             Uri usuarioUri = response.Headers.Location;
 
                             //Pegando os dados do Rest e armazenando na variável usuários
-                            ; // var usuarios = response.Content.ReadAsAsync<IEnumerable<Usuario>>().Result;
+                            // var usuarios = response.Content.ReadAsAsync<IEnumerable<Usuario>>().Result;
 
+                            // Response.Redirect((response.Content.ReadAsStringAsync()).Result);
+                            
                         }
 
                         else
                             Response.Write(response.StatusCode.ToString() + " - " + response.ReasonPhrase);
                         //}
 
-
-
-
-
-
+                        
                     }
                     catch (Exception BlueScreen)
                     {
+                        //throw BlueScreen;
                         //Handle errors
                     }
 
